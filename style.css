@@ -35,6 +35,7 @@ body {
 
 .navbar-s1 img {
     width: 200px;
+    max-width: 100%;
 }
 
 .navbar-s1 img:hover {
@@ -175,6 +176,7 @@ body {
 
 .salesimage img {
     width: 100%;
+    border-radius: 20px;
 }
 
 .salesimage_offer {
@@ -252,7 +254,7 @@ body {
 }
 
 .traveller_fave_item img {
-    width: 120%;
+    width: 100%;
     height: auto;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 10px;
@@ -327,35 +329,37 @@ body {
 .like_container {
     display: flex;
     transition: transform 0.5s ease;
-    width: 600%;
+    width: calc(100% * 5);
     gap: 80px;
     padding: 20px;
 }
 
 .like_item {
     position: relative;
-    flex: 0 0 calc(20% - 20px);
+    flex: 0 0 calc(20% - 16px);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .like_item img {
-    width: 120%;
+    width: 100%;
     height: auto;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 10px;
 }
 
 .like_item:hover img {
-    transform: scale(0.98);
-    box-shadow: 0 3px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .like_item h4 {
     position: absolute;
-    top: 85%;
+    bottom: 5%;
     left: 10px;
     color: white;
-    background-color: #434242;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 .icon-container {
@@ -402,6 +406,7 @@ body {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
+        gap: 10px;
     }
 
     .navbar-s1 img {
